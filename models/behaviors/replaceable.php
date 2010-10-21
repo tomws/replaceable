@@ -109,7 +109,7 @@ class ReplaceableBehavior extends ModelBehavior
 				$Model->ReplaceableBehavior_updatingHistoryRow = true;
 				// Save the model data, otherwise it's lost in the saveField call below.
 				$this->originalModelData = $Model->data;
-				if (!$Model->saveField($settings['history_row_field_name'], $history_row, true))
+				if (!$Model->saveField($this->settings['history_row_field_name'], $history_row, true))
 				{
 					$Model->ReplaceableBehaviorMessages['Error'] = 'The '.$this->HumanizedModelName.' was not saved: the audit row ('.$history_row.') could not be saved.';
 					// TODO RTMS: Log it
