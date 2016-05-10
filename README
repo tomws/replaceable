@@ -1,4 +1,1 @@
 This is a behavior-only plugin for "moving" a replaced model row to a history/audit table.
-
-For now, the only documentation is on my website:
-http://tomscrape.com/content/cakephp-replaceablebehavior-store-modified-data-historyaudit-use
